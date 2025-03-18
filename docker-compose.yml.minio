@@ -12,7 +12,7 @@ services:
       - "9001:9001"
     environment:
       MINIO_ROOT_USER: admin
-      MINIO_ROOT_PASSWORD: password
+      MINIO_ROOT_PASSWORD: redacted
     volumes:
       - /mnt/usbhd:/data
     command: server --address ":9000" --console-address ":9001" /data
